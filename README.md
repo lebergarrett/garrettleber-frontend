@@ -6,4 +6,4 @@ I chose to use a template for the website found at w3schools.com.
 
 I crafted the javascript counter myself using a fetch request to the API built by the backend.
 
-I used AWS CodeDeploy to automatically deploy updates to this repo to the live S3 bucket hosting the site.
+I used AWS CodePipeline to automatically deploy updates to this repo to the live S3 bucket hosting the site.
