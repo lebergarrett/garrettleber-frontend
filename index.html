@@ -31,7 +31,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple"></i>DevOps/Cloud Engineer</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple"></i>Virginia, USA</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-purple"></i>lebergarrett@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple"></i>(623)261-0791</p>
           <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-purple"></i><a href="https://www.linkedin.com/in/garrettleber/" target="_blank">LinkedIn</a></p>
           <p><i class="fa fa-github-square fa-fw w3-margin-right w3-large w3-text-purple"></i><a href="https://github.com/lebergarrett" target="_blank">GitHub</a></p>
           <hr>
@@ -51,7 +50,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p>Containers (Docker)</p>
           <p>Configuration Management (Ansible)</p>
           <p>Infrastructure as Code (Terraform, CloudFormation)</p>
-          <p>Continuous Integration Pipelines (GitHub Actions)</p>
+          <p>CI/CD (GitHub Actions, AWS CodePipeline)</p>
           <p>Linux Administration</p>
           <p>TCP/IP</p>
           <p>Git</p>
@@ -128,13 +127,14 @@ traffic. Examined proxy connections to troubleshoot http status codes and resolv
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-github-square fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Portfolio</h2>
         <div class="w3-container">
-          <h6 class="w3-opacity"><b>Cloud Resume Challenge</b></h6>
+          <h6 class="w3-opacity"><b>Cloud Resume Challenge </b></h6>
           <ul>
-            <li>Developed static website using HTML, CSS, and JavaScript.</li>
+            <li>Built static website using HTML, CSS, and JavaScript.</li>
             <li>Hosted website using S3 and CloudFront, configured TLS certificates and proper DNS records.</li>
-            <li>Added Visitor counter (see: bottom of page) using a JavaScript fetch request to an API Gateway. This calls a Python Lambda Function, which updates the 'hits' attribute in a DynamoDB table and returns the value to the client.</li>
-            <li>Entire backend is built using Terraform for easy teardown and buildup, with the added benefit of immutability.</li>
-            <li>Built using AWS Serverless technologies</li>
+            <li>Developed visitor counter (see: bottom of page) using a JavaScript fetch request to an API Gateway. This calls a Python Lambda Function, which updates the 'hits' attribute in a DynamoDB table and returns the value to the client.</li>
+            <li>Entire backend is built using Terraform for easy teardown and buildup, implementing IaC which has the added benefit of immutability. Uses S3 for remote backend.</li>
+            <li>Implements CI/CD on both the frontend and backend, using AWS CodePipeline, Python Unit Tests, and Github Actions.</li>
+            <li><h6 class="w3-opacity"><b>GitHub Repositories: <a href="https://github.com/lebergarrett/garrettleber-frontend" target="_blank">Frontend</a>, <a href="https://github.com/lebergarrett/garrettleber-backend" target="_blank">Backend</a></b></h6></li>
             </ul>
             <hr>
           <h6 class="w3-opacity"><b>Docker/Ansible Minecraft Server Network</b></h6>
@@ -144,6 +144,7 @@ traffic. Examined proxy connections to troubleshoot http status codes and resolv
               <li>Creates mount points for Docker containers and copies over plugins and whitelist from remote storage into all proper server directories.</li>
               <li>Uses Ansible templates to configure plugins and mods appropriately depending on other host variables, mitigating the chance of misconfiguration and reducing admin overhead.</li>
               <li>Uses Ansible-Vault to manage secrets, currently only being used for the MariaDB database for storing player permissions.</li>
+              <li><h6 class="w3-opacity"><b><a href="https://github.com/lebergarrett/mc-network" target="_blank">GitHub Repository</a></b></h6></li>
               </ul>
               <hr>
         </div>
